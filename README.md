@@ -1,6 +1,7 @@
 # shopping-cart
 
-> A vue.js Project
+> A vue.js Project, This shoppingcart app website is linked with the https://vueschool.io/courses/vuex-for-everyone
+The name of this course is Vuex for everyone, This Vue.js course is based on the official Vuex example.  - shopping cart with Vue and progressively discover and learn about Vuex features by replacing pieces of the application with mutations, getters, and actions.
 
 ## Build Setup
 
