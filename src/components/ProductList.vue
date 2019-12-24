@@ -12,6 +12,7 @@
             :disabled="!productIsInStock(product)"
             @click="addProductToCart(product)"
           >Add to cart</button>
+          <br> <br>
         </li>
       </ul>
     </div>
