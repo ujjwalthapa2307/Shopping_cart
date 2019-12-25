@@ -6,7 +6,8 @@
         src="https://i.imgur.com/JfPpwOA.gif"
       >
       <ul v-else>
-        <li v-for="product in products">
+        <li v-for="(product, index) in products">
+          <img :src="productImages[index].image" alt="productimage" height="100" width="100">
           {{product.title}} - {{product.price | currency}} - {{product.inventory}}
           <button
             :disabled="!productIsInStock(product)"
@@ -24,7 +25,36 @@
     data () {
       return {
         loading: false,
-        productIndex: 1
+        productIndex: 1,
+        productImages: [
+          {
+            "image": require('@/assets/images/product-images/ipad_mini4.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/H&M T-Shirt White.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/Charli Songs CD.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/iphonepro11.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/kanji2500.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/jeans.jpg')
+          },
+          {
+              "image": require('@/assets/images/product-images/timberlandshoe.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/rubyonrails.jpg')
+          },
+          {
+            "image": require('@/assets/images/product-images/macbookpro.jpg')
+          }
+        ],
       }
     },
 
@@ -51,6 +81,7 @@
         .then(() => this.loading = false)
     }
   }
+  // console.log(productImages[0].image);
 </script>
 
 <style scoped>
