@@ -10,7 +10,7 @@ const _products = [
   {"id": 6, "title": "Blue Jeans", "price": 22.77, "inventory": 10},
   {"id": 7, "title": "timberlandShoes", "price": 244.77, "inventory": 6},
   {"id": 8, "title": "RubyOnRails", "price": 20.77, "inventory": 16},
-  {"id": 8, "title": "Mac BookPro", "price": 2500.77, "inventory": 16},
+  {"id": 9, "title": "Mac BookPro", "price": 2500.77, "inventory": 16},
 ]
 
 export default {

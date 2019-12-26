@@ -1,11 +1,18 @@
 <template lang="html">
   <div>
-    <h1>I am in Sale</h1>
+    <ProductList />
+    <ShoppingCart />
   </div>
 </template>
 
 <script>
+import ProductList from '@/components/ProductList';
+import ShoppingCart from '@/components/ShoppingCart';
 export default {
+  components: {
+    ProductList,
+    ShoppingCart
+  }
 }
 </script>
 
