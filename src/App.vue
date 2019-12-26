@@ -4,6 +4,7 @@
     <div id="nav">
     <router-link to="/"></router-link>
     <router-link to="/products"></router-link>
+    <router-link to="/sales"></router-link>
     </div>
     <router-view />
     <Footer/>
