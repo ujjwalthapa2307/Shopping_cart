@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <Header/>
-    <ProductList/>
-    <hr>
-    <ShoppingCart/>
+    <div id="nav">
+    <router-link to="/"></router-link>
+    <router-link to="/products"></router-link>
+    </div>
+    <router-view />
     <Footer/>
   </div>
 </template>
@@ -11,13 +13,10 @@
 <script>
 import Footer from './components/Footer'
 import Header from './components/Header'
-import ProductList from './components/ProductList'
-import ShoppingCart from './components/ShoppingCart'
+
 export default {
   name: 'app',
   components: {
-    ProductList,
-    ShoppingCart,
     Header,
     Footer
   }
