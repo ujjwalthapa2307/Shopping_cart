@@ -52,6 +52,9 @@ export default {
   },
   computed: {
     filteredOptions() {
+      if(this.query == ''){
+        return [];
+      }
       return [
         {
           data: this.suggestions[0].data.filter(option => {
@@ -64,9 +67,6 @@ export default {
   methods: {
     clickHandler(item) {
       // event fired when clicking on the input
-      if(item != null) {
-        showitems = true;
-      }
     },
     onSelected(item) {
       this.selected = item.item;

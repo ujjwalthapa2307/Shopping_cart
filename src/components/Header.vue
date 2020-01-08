@@ -18,7 +18,11 @@
           <b-navbar-nav class="ml-auto">
             <b-nav-form>
               <VueAutosuggest />
-              <!-- <b-form-input size="sm" type="text" id="myInput" class="mr-sm-2" placeholder="Search"></b-form-input> -->
+              <!--<b-form-input size="sm" type="text" id="myInput" class="mr-sm-2" placeholder="Search"> Hello
+                <div class="test">
+                  <li v-for="product in products">{{product.title}}</li>
+                </div>
+              </b-form-input> -->
               <b-button size="sm" class="my-2 my-sm-0" type="submit" @click="search()">Search</b-button>
             </b-nav-form>
 
@@ -44,18 +48,6 @@ export default {
   components: {
     VueAutosuggest
   }
-  /*
-  methods: {
-    ...mapActions({
-      fetchProducts: 'products/fetchProducts'
-    }),
-    search() {
-      let input,searchkeyword;
-      input = document.getElementById("myInput");
-      searchkeyword = input.value;
-    }
-  }
-  ,*/
 }
 </script>
 
